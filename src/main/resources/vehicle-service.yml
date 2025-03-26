@@ -1,0 +1,14 @@
+server:
+  port: 8091
+
+spring:
+  application:
+    name: vehicle-service
+  data:
+    mongodb:
+      uri: mongodb://mongodb:27017/vehicules
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:8761/eureka/
