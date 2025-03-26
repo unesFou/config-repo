@@ -1,0 +1,18 @@
+server:
+  port: 9998  # Port du Config Server
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ton-repo/config-repo  # Remplace avec l'URL de ton repo Git
+          clone-on-start: true  # Cloner le repo au démarrage
+          default-label: main  # Branche par défaut
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:8761/eureka/
