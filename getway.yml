@@ -1,0 +1,14 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: getway
+#  data:
+#    mongodb:
+#      uri: mongodb://mongodb:27017/annonce
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:8761/eureka
