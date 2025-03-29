@@ -1,12 +1,12 @@
 server:
-  port: 8091
+  port: 9999
 
 spring:
   application:
-    name: vehicle-service
-  data:
-    mongodb:
-      uri: mongodb://mongodb:27017/vehicules
+    name: getway
+#  data:
+#    mongodb:
+#      uri: mongodb://mongodb:27017/annonce
 
 eureka:
   client:
