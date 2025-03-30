@@ -1,0 +1,16 @@
+server:
+  port: 0  # Laisser Spring attribuer un port aléatoire
+
+spring:
+  profiles:
+    active: dev
+  cloud:
+    config:
+      allowOverride: true  # Permet aux microservices d’écraser les configs globales
+      overrideNone: false
+      overrideSystemProperties: false
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:8761/eureka
