@@ -1,5 +1,5 @@
 server:
-  port: 9998  # Port du Config Server
+  port: 9998
 
 spring:
   application:
@@ -8,13 +8,11 @@ spring:
     config:
       server:
         git:
-          #uri: file:///C:/Users/Fujitsu/Documents/MasterIAO/IAO MASTER M2/Project-Backend-Pfe/config-repo/
-          uri: https://github.com/unesFou/config-repo.git
-          searchPaths: '{application}'
-          username: unesFou
-          password: unes1989
+          uri: file:///C:/Users/Fujitsu/Documents/MasterIAO/IAO MASTER M2/Project-Backend-Pfe/config-repo
+#          searchPaths: '{application}'
+#          username: unesFou
+#          password: unes1989
           clone-on-start: true
-          default-label: main
       refreshRate: 0
 
 eureka:
