@@ -1,5 +1,5 @@
 server:
-  port: 0  # Laisser Spring attribuer un port aléatoire
+  port: 9990  # Laisser Spring attribuer un port aléatoire
 
 spring:
   profiles:
